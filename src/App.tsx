@@ -22,6 +22,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import TaskList from './pages/TaskList';
 
 const App: React.FC = () => (
   <IonApp>
@@ -32,6 +33,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/addtask">
           <Tasks />
+        </Route>
+        <Route exact path="/taskList">
+          <TaskList />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
